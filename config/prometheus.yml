@@ -11,7 +11,7 @@ scrape_configs:
           application: "Patient Service"
   - job_name: "node-exporter"
     static_configs:
-      - targets: ["node_exporter:9100", "YourIPAddress:9182"]
+      - targets: ["node_exporter:9100", "172.18.128.1:9182"]
   - job_name: "otel-collector"
     scrape_interval: 5s
     static_configs:
